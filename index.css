@@ -95,7 +95,11 @@ header > .card > .card-body > a {
     }
 }
 
-
+@media only screen and (min-width: 701px) {
+    .id-contentmob {
+        display:none;
+    }
+}
 
 
 #main > .id-content  > #img-3 {
