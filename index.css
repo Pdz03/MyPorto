@@ -27,85 +27,47 @@ header > .card > .card-body > a {
     
 }
 
-.jumbotron {
-    width:100%;
-}
-
-.carousel-item {
-    height:400px;
-    object-fit: cover;
-}
-
 #main{
     min-height:700px;
 }
 
 #main > .photo > #img-1 {
     position: absolute;
+    animation-name: foto;
+    animation-duration: 2s;
     z-index: 997;
     width:45%;
 }
 
+@keyframes foto {
+    0%   {opacity:0;}
+    100%   {opacity: 1;}
+}
+
 #main > .photo  > #img-2 {
     position: absolute;
+    animation-name: kiri;
+    animation-duration: 3s;
     z-index: 998;
     width:50%;
 }
 
-@media only screen and (max-width: 700px) {
-    #main > .id-content {
-        display:none;
-    }
-
-    #main > .photo > #img-1 {
-        position: absolute;
-        z-index: 997;
-        width:95%;
-    }
-    
-    #main > .photo  > #img-2 {
-        position: absolute;
-        z-index: 998;
-        width:100%;
-    }
-
-    .id-contentmob {
-        padding: 10px;
-        height: 300px;
-    }
-    
-    .id-contentmob > .main-content {
-        position: absolute;
-        z-index: 999;
-    }
-    
-    .id-contentmob > .main-content > h1{
-        font-size: 40px;
-        border-top: 3px black solid;
-    }
-    
-    .id-contentmob > .main-content > .position{
-        font-size: 20px;
-    }
-    
-    .id-contentmob > .main-content > .description{
-        width: 90%;
-        text-align: justify;
-        border-top: 2px black solid;
-    }
+@keyframes kiri {
+    0%   {left:-550px;}
+    100%   {left:0px;}
 }
-
-@media only screen and (min-width: 701px) {
-    .id-contentmob {
-        display:none;
-    }
-}
-
 
 #main > .id-content  > #img-3 {
     position: absolute;
+    animation-name: kanan;
+    animation-duration: 3s;
     z-index: 998;
     width:50%;
+}
+
+@keyframes kanan {
+    0%   {right:-550px;}
+    100%   {right:0px;}
 }
 
 #main > .id-content > .main-content {
@@ -223,7 +185,3 @@ header > .card > .card-body > a {
 footer{
     position:relative;
 }
-/* 
-.card > .card-img-top {
-    width:50px;
-} */
